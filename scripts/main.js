@@ -1,9 +1,39 @@
-var currentLightColor = 'Yellow';
+var tvShows = [
+  'The Walking Dead', 
+  'Breaking Bad', 
+  'The Office'
+];
 
-if (currentLightColor == 'Green') {
-  console.log('The bottom light is ' + currentLightColor + '.  ');
-} else if (currentLightColor == 'Yellow') {
-  console.log('The middle light is ' + currentLightColor + '.  ');
-} else if (currentLightColor == 'Red') {
-    console.log ('The top light is ' + currentLightColor + '.  ');
+var completedItems = [];
+
+var toDos = [
+  { title: 'Item 1', completed: true},
+  { title: 'Item 2', completed: false},
+  { title: 'Item 3', completed: false},
+  { title: 'Item 4', completed: true},
+]
+
+for (var x = 0; x < toDos.length; x++) {
+  if (toDos[x].completed) {
+    completedItems.push(toDos[x]);
   }
+}
+
+var bottles = 99;
+while (bottles > 0) {
+  if (bottles != 1) {
+    console.log(bottles + ' bottles of stuff on the wall');
+  } else {
+    console.log(bottles + ' bottle of stuff on the wall');
+  }
+  bottles -= 1;
+}
+
+
+
+// console.log(toDos);
+// console.log(completedItems);
+
+// for (var i = 0; i < tvShows.length; i++) {
+//   console.log(tvShows[i]);
+// }
